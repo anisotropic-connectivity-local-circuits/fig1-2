@@ -1,7 +1,5 @@
 
-%\documentclass[crop=true,border=0,convert={density=600}]{standalone}
 \documentclass[margin={-0.5cm 0cm 0cm 0cm}, 11pt]{standalone}
-%% \documentclass[11pt, margin={-0.5cm 0.54cm 0cm -0.5cm}]{standalone}
 
 \usepackage{graphicx}
 \usepackage{xcolor}
@@ -32,52 +30,50 @@
 
 \begin{tabular}{@{}l@{}}
 
-
   
   \smallskip
   
   \\
   
-  \begin{overpic}[width=\w]%
-    % 110, 133
-    {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/image10a.png}
-    %\put(32,\ylin){anisotropic}
+  \begin{overpic}[width=\w]{%
+      img/fig1-2_master_layer1.png}
+
     \put(15,\ylin){\normalfont \Largeplus  1. random angle $\alpha$}
-    %% \put(18,\ylin){\normalfont \Large  1. random angle $\alpha$}
     \put(\xin,\yin){\fboxsep=3pt\colorbox{white}{A}}
 
     \put(34.9,50.5){\fboxsep=3pt\colorbox{white}{$\alpha$}}
+    
   \end{overpic}
 
-  \begin{overpic}[width=\w]%
-    %{raw/5cbe80b9_rew.pdf}
-    {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/image11a.png}
-    %\put(36,\ylin){rewired}
+
+  \begin{overpic}[width=\w]{%    
+      img/fig1-2_master_layer2.png}
+
     \put(12.5,\ylin){\normalfont \Largeplus 2. find target nodes}
-    %% \put(15,\ylin){\normalfont \Large 2. find target nodes}
-    
+   
     \put(41,44.5){\fboxsep=1pt\colorbox{white}{$\frac{w}{2}$}}
     \put(31.9,37.5){\fboxsep=1pt\colorbox{white}{$\frac{w}{2}$}}    
-    %% \put(\xin,\yin){\fboxsep=3pt\colorbox{white}{B}}
-  \end{overpic}
 
-  \begin{overpic}[width=\w]%
-    {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/image12a.png}
-    %\put(13,\ylin){distance-dependent}
+  \end{overpic}
+  
+
+  \begin{overpic}[width=\w]{%
+      img/fig1-2_master_layer3.png}
+  
     \put(15,\ylin){\normalfont \Largeplus 3. connect targets}
-    %% \put(17.5,\ylin){\normalfont \Large 3. connect targets}
     
-    %% \put(\xin,\yin){\fboxsep=3pt\colorbox{white}{C}}
-  \end{overpic}
-  
-  \begin{overpic}[width=\w]%
-    {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/fig1_reqs_54-aniso_54.png}
-    %\put(18,\ylin){tuned anisotropic}
-    %% \put(16,\ylin){\normalfont \Largeplus tuned anisotropic}
-    \put(\xin,\yin){\fboxsep=3pt\colorbox{white}{B}}
   \end{overpic}
 
   
+  \begin{overpic}[width=\w]{%
+      img/fig1-2_aniso_model_raws_B_No54.png}
+
+    \put(\xin,\yin){\fboxsep=3pt\colorbox{white}{B}}
+    
+  \end{overpic}
+
+  
+
 \end{tabular}	
 
 
