@@ -1,0 +1,74 @@
+
+\documentclass[margin={-0.5cm 0cm 0cm 0cm}, 11pt]{standalone}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{overpic}
+\usepackage{tgheros}
+\usepackage[eulergreek]{sansmath}
+\sansmath
+\usepackage[export]{adjustbox}
+\usepackage{calc}
+
+\renewcommand*{\familydefault}{\sfdefault}
+
+\makeatletter 
+\newcommand\Largeplus{\@setfontsize\semiHuge{14.72}{19.38}}
+\makeatother
+
+\begin{document}
+
+\def\xin{5.}
+\def\yin{87.5}
+\def\xlin{50}
+\def\ylin{100}
+%\def\ylin{-8}
+
+\def\w{2.6in}
+
+\Large \bfseries
+
+\begin{tabular}{@{}l@{}}
+
+  
+  \smallskip
+  
+  \\
+  
+  \begin{overpic}[width=\w]{%
+      img/fig1-2_master_layer1.png}
+
+    \put(15,\ylin){\normalfont \Largeplus  1. random angle $\alpha$}
+    \put(\xin,\yin){\fboxsep=3pt\colorbox{white}{A}}
+
+    \put(34.9,50.5){\fboxsep=3pt\colorbox{white}{$\alpha$}}
+    
+  \end{overpic}
+
+
+  \begin{overpic}[width=\w]{%    
+      img/fig1-2_master_layer2.png}
+
+    \put(12.5,\ylin){\normalfont \Largeplus 2. find target nodes}
+   
+    \put(41,44.5){\fboxsep=1pt\colorbox{white}{$\frac{w}{2}$}}
+    \put(31.9,37.5){\fboxsep=1pt\colorbox{white}{$\frac{w}{2}$}}    
+
+  \end{overpic}
+  
+
+  \begin{overpic}[width=\w]{%
+      img/fig1-2_master_layer3.png}
+  
+    \put(15,\ylin){\normalfont \Largeplus 3. connect targets}
+    
+  \end{overpic}
+
+  
+
+\end{tabular}	
+
+
+\end{document}
+
+
